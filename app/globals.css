@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~aos/dist/aos.css";
+
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --primary: #1b2954;
+  --secondary: #ffea89;
+  --bgA1: #093a3b;
+  --noti: #e09b69;
+  --cta: #6aaa82;
+  --bgA2: #96dadd;
+  --bg: rgb(253,254,245);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.image-container {
+  width: 400px; 
+  height: 500px; 
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.image-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 400px){
+  .image-container {
+    width: 250px; 
+    height: 250px; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url(/fonts/Montserrat2/Montserrat-VariableFont_wght.ttf) format('ttf');
+}
+.montserrat{
+  font-family: 'montserrat', sans-serif;
+  font-weight: 400;
+}
+.montserrat.bold-text{
+  font-weight: 700;
+}
+.montserrat.semi-bold-text{
+  font-weight: 600;
+}
+
+.oswald{
+  font-family: 'oswald', sans-serif;
+}
+.oswald.regular-text {
+  font-weight: 400; /* Regular */
+}
+.oswald.semi-bold-text {
+  font-weight: 600; /* SemiBold */
+  line-height: 96px;
+}
+.oswald.bold-text {
+  font-weight: 700; /* Bold */
+}
+.oswald.heavy-text {
+  font-weight: 900; /* Heavy Regular */
+}
+
+.oa-nav {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  top: -20em;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
+  background-color: white;
+  color: var(--primary);
+}
