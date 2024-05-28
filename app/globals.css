@@ -64,8 +64,15 @@
   font-weight: 600;
 }
 
+@font-face {
+  font-family: 'oswald';
+  src: url(/fonts/Oswald/Oswald-VariableFont_wght.ttf) format('truetype');
+}
+
 .oswald{
   font-family: 'oswald', sans-serif;
+  font-weight: 400;
+  
 }
 .oswald.regular-text {
   font-weight: 400; /* Regular */
