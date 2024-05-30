@@ -5,8 +5,8 @@ Three-step hero animation with fade effects.
 ## Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/my-hero-animation-demo.git
-   cd my-hero-animation-demo
+   git clone https://github.com/dajawhite/hero-animation.git
+   cd hero-animation
    ```
 2. Install dependencies:
     ```
